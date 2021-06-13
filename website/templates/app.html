@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>House Price Prediction</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- icon for website -->
+    <link rel="shortcut icon" href="https://1.bp.blogspot.com/-oPn3tuaT2bo/YIJkFEOcuqI/AAAAAAAAD-Q/nLYhHW1kpDgEdg4--tsVwYQdF5TOlEb8ACLcBGAsYHQ/s64/icons8-home-64.png" type="image/png">
+    <!--  font awesome  -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/font-awesome.css') }}">
+    <!--  main css  -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/app.css') }}">
+    <!-- responsive css-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+    <!-- default color skin -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/skins/color-2.css') }}">
+    <!-- style switcher -->
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-1" href="{{ url_for('static', filename='css/skins/color-1.css') }}" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-2" href="{{ url_for('static', filename='css/skins/color-2.css') }}" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-3" href="{{ url_for('static', filename='css/skins/color-3.css') }}" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-4" href="{{ url_for('static', filename='css/skins/color-4.css') }}" disabled>
+    <link rel="stylesheet" type="text/css" class="alternate-style" title="color-5" href="{{ url_for('static', filename='css/skins/color-5.css') }}" disabled>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style-switcher.css') }}">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <!-- preloader start-->
+    <div class="preloader">
+        <div class="box">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- preloader end-->
+
+    <!-- Header Start -->
+    <header class="header">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="logo">
+                    <a href="/">₹</a>
+                </div>
+                <div class="hamburger-btn outer-shadow hover-in-shadow">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- navigation menu start -->
+    <nav class="nav-menu">
+        <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
+        <div class="nav-menu-inner">
+            <ul>
+                <li><a href="#home" class="link-item inner-shadow active">home</a></li>
+                <li><a href="#about" class="link-item outer-shadow hover-in-shadow">about</a></li>
+                <li><a href="#predict" class="link-item outer-shadow hover-in-shadow">predict</a></li>
+                <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">contact</a></li>
+            </ul>
+        </div>
+        <!-- copyright text -->
+        <p class="copyright-text">&copy; 2021 Rahul Gupta</p>
+    </nav>
+    <div class="fade-out-effect"></div>
+    <!-- navigation menu end -->
+
+    <!-- home section start -->
+    <section class="home-section section active" id="home">
+        <!-- effect wrap start -->
+        <div class="effect-wrap">
+            <div class="effect effect-1">
+            </div>
+            <div class="effect effect-2">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="effect effect-3">
+            </div>
+            <div class="effect effect-4">
+            </div>
+            <div class="effect effect-5">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+        </div>
+        <!-- effect wrap end -->
+        <div class="container">
+            <div class="row full-screen align-items-center">
+                <div class="home-text">
+                    <h2>House Price Prediction</h2>
+                    <h1>with Machine Learning</h1>
+                    <a href="#about" class="link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
+                </div>
+                <div class="home-img">
+
+                    <img src="https://1.bp.blogspot.com/-PmAFg2qyp38/YIGXdYsiQUI/AAAAAAAAD9k/yXhYuDoOTDUuGiuElDkpQV22QGdMXpOmgCLcBGAsYHQ/s577/house.png" alt="profile-pic">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- home section end -->
+
+    <!-- about section start -->
+    <section class="about-section section" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="main info">About me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="about-img">
+                    <div class="img-box inner-shadow">
+                        <img src="https://1.bp.blogspot.com/-Q0uLIrOm85Y/YFzRJlk3UvI/AAAAAAAADpA/H61j_bM0-jEPXhugr2ZlxvI5N7-psYOrgCLcBGAsYHQ/s1024/PicsArt_03-25-11.12.03.png" class="outer-shadow" alt="profile-pic">
+                    </div>
+                </div>
+                <div class="about-info">
+                    <p>Hi! My name is Rahul Gupta & I created this <span>House Price Prediction</span> website with the help of a <span>Linear Regression Algorithm!</span> I used Real estate database of Metropolitan cities like Mumbai, Delhi & Bangalore
+                        for creating the <span>Machine Learning Model</span> to predict the prices of property in different locations of respective cities.</p>
+                    <p>A user can write the <span>"Area (in square feet)"</span>, select the number of
+                        <span>"BHK"</span> and <span>"Bathroom"</span>, and at last, choose the preferred
+                        <span>"Location"</span> and click on the <span>"Predict"</span> button. After clicking, the aforementioned ML model will predict the price of the house as per the data submitted by the user.
+                    </p>
+                    <div class="link-btn">
+                        <a href="#contact" class="link-item btn-1 outer-shadow hover-in-shadow">Contact Developer</a>
+                    </div>
+                    <!-- social link start -->
+                    <div class="social-links">
+                        <a href="https://github.com/iamrahul-9" target="_blank" class="outer-shadow hover-in-shadow"><i
+                                class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/it.s_just_rahul/" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/thetiptechtalk" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/rahul-gupta-7b528718b/" target="_blank" class="outer-shadow hover-in-shadow"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- social link end -->
+                </div>
+            </div>
+        </div>
+        <!-- about tab end -->
+        </div>
+    </section>
+    <!-- about section end -->
+
+    <!-- predict section start -->
+    <section class="predict-section section" id="predict">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="predict">CHOOSE THE CITY</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- sound on button click -->
+        <audio id="money">
+            <source src="{{ url_for('static', filename='money.mp3') }}" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <!-- sound on button click -->
+
+        <div class="tab-section outer-shadow">
+            <div class="tab-inner">
+                <!-- openCity() new code -->
+                <div class="tab-header">
+                    <img src="https://1.bp.blogspot.com/-EJgbk40W0p4/YIGYXOR6_BI/AAAAAAAAD9w/vT3Bc48agfUe_XUNjLQSN0ozuGXl-DgJgCLcBGAsYHQ/s512/gateway-of-india.png" alt="mumbai">
+                    <div class="tablinks outer-shadow hover-in-shadow btn-1" onclick="openCity(event, 'Mumbai')">Mumbai
+                    </div>
+                </div>
+                <div class="tab-header">
+                    <img src="https://1.bp.blogspot.com/-39ubGT36tLc/YIGYXCpNgqI/AAAAAAAAD90/542zRig2A6M5Qpy3rXWjTaNPXwX8AdbmACLcBGAsYHQ/s512/india-gate.png" alt="delhi">
+                    <div class="tablinks outer-shadow hover-in-shadow btn-1" onclick="openCity(event, 'Delhi')">Delhi
+                    </div>
+                </div>
+                <div class="tab-header">
+                    <img src="https://1.bp.blogspot.com/-oKQd8Myvf10/YIGYXPm0ONI/AAAAAAAAD9s/YFFcIBbRSoody2tgTmEi4P7Njp_B2qU8wCLcBGAsYHQ/s512/bangalore.png" alt="bangalore">
+                    <div class="tablinks outer-shadow hover-in-shadow btn-1" onclick="openCity(event, 'Bangalore')">
+                        Bangalore</div>
+                </div>
+            </div>
+            <!-- id part new -->
+            <div class="tabcontent" id="Mumbai">
+                <!-- mumbai prediction model start -->
+                <div class="prediction-form">
+                    <form class="form h-50">
+                        <h2>Area in Square Feet</h2>
+                        <div class="input-group outer-shadow hover-in-shadow">
+                            <input type="text" value="300" placeholder="Enter a value" class="input-control area floatLabel" id="mSqft" name="Squareft">
+                        </div>
+                        <h2>BHK</h2>
+                        <div class="switch-field input-group outer-shadow">
+                            <input type="radio" id="mumbai-bhk-1" name="mBHK" value="1" checked />
+                            <label for="mumbai-bhk-1">1</label>
+                            <input type="radio" id="mumbai-bhk-2" name="mBHK" value="2" />
+                            <label for="mumbai-bhk-2">2</label>
+                            <input type="radio" id="mumbai-bhk-3" name="mBHK" value="3" />
+                            <label for="mumbai-bhk-3">3</label>
+                            <input type="radio" id="mumbai-bhk-4" name="mBHK" value="4" />
+                            <label for="mumbai-bhk-4">4</label>
+                            <input type="radio" id="mumbai-bhk-5" name="mBHK" value="5" />
+                            <label for="mumbai-bhk-5">5</label>
+                        </div>
+                        <h2>Bath</h2>
+                        <div class="switch-field input-group outer-shadow">
+                            <input type="radio" id="mumbai-bath-1" name="mBathrooms" value="1" checked />
+                            <label for="mumbai-bath-1">1</label>
+                            <input type="radio" id="mumbai-bath-2" name="mBathrooms" value="2" />
+                            <label for="mumbai-bath-2">2</label>
+                            <input type="radio" id="mumbai-bath-3" name="mBathrooms" value="3" />
+                            <label for="mumbai-bath-3">3</label>
+                            <input type="radio" id="mumbai-bath-4" name="mBathrooms" value="4" />
+                            <label for="mumbai-bath-4">4</label>
+                            <input type="radio" id="mumbai-bath-5" name="mBathrooms" value="5" />
+                            <label for="mumbai-bath-5">5</label>
+                        </div>
+                        <h2>Location</h2>
+                        <div>
+                            <select class="location outer-shadow" name="" id="mLocations">
+                                <option value="" disabled="disabled" selected="selected">Choose a
+                                    Location</option>
+                                <option>Electronic City</option>
+                                <option>Rajaji Nagar</option>
+                            </select>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="button" onclick="onClickedEstimatePriceM()" class="btn-1 submit outer-shadow hover-in-shadow">
+                                Predict Price
+                            </button>
+                        </div>
+                        <div id="mEstimatedPrice" class="result outer-shadow">
+                            <h2></h2>
+                        </div>
+                    </form>
+                </div>
+                <!-- mumbai prediction model end -->
+            </div>
+            <div class="tabcontent" id="Delhi">
+                <!-- delhi prediction model start -->
+                <div class="prediction-form">
+                    <form class="form h-50">
+                        <h2>Area in Square Feet</h2>
+                        <div class="input-group outer-shadow hover-in-shadow">
+                            <input type="text" value="1000" placeholder="Enter a value" class="input-control area floatLabel" id="dSqft" name="Squareft">
+                        </div>
+                        <h2>BHK</h2>
+                        <div class="switch-field input-group outer-shadow">
+                            <input type="radio" id="delhi-bhk-1" name="dBHK" value="1" />
+                            <label for="delhi-bhk-1">1</label>
+                            <input type="radio" id="delhi-bhk-2" name="dBHK" value="2" checked />
+                            <label for="delhi-bhk-2">2</label>
+                            <input type="radio" id="delhi-bhk-3" name="dBHK" value="3" />
+                            <label for="delhi-bhk-3">3</label>
+                            <input type="radio" id="delhi-bhk-4" name="dBHK" value="4" />
+                            <label for="delhi-bhk-4">4</label>
+                            <input type="radio" id="delhi-bhk-5" name="dBHK" value="5" />
+                            <label for="delhi-bhk-5">5</label>
+                        </div>
+                        <h2>Bath</h2>
+                        <div class="switch-field input-group outer-shadow">
+                            <input type="radio" id="delhi-bath-1" name="dBathrooms" value="1" />
+                            <label for="delhi-bath-1">1</label>
+                            <input type="radio" id="delhi-bath-2" name="dBathrooms" value="2" checked />
+                            <label for="delhi-bath-2">2</label>
+                            <input type="radio" id="delhi-bath-3" name="dBathrooms" value="3" />
+                            <label for="delhi-bath-3">3</label>
+                            <input type="radio" id="delhi-bath-4" name="dBathrooms" value="4" />
+                            <label for="delhi-bath-4">4</label>
+                            <input type="radio" id="delhi-bath-5" name="dBathrooms" value="5" />
+                            <label for="delhi-bath-5">5</label>
+                        </div>
+                        <h2>Location</h2>
+                        <div>
+                            <select class="location outer-shadow" name="" id="dLocations">
+                                <option value="" disabled="disabled" selected="selected">Choose a
+                                    Location</option>
+                                <option>Electronic City</option>
+                                <option>Rajaji Nagar</option>
+                            </select>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="button" onclick="onClickedEstimatePriceD()" class="btn-1 submit outer-shadow hover-in-shadow">
+                                Predict Price
+                            </button>
+                        </div>
+                        <div id="dEstimatedPrice" class="result outer-shadow">
+                            <h2></h2>
+                        </div>
+                    </form>
+                </div>
+                <!-- delhi prediction model end -->
+            </div>
+            <div class="tabcontent" id="Bangalore">
+                <!-- bangalore prediction model start -->
+                <div class="prediction-form">
+                    <form class="form h-50">
+                        <h2>Area in Square Feet</h2>
+                        <div class="input-group outer-shadow hover-in-shadow">
+                            <input type="text" value="700" placeholder="Enter a value" class="input-control area floatLabel" id="uiSqft" name="Squareft">
+                        </div>
+                        <h2>BHK</h2>
+                        <div class="switch-field input-group outer-shadow">
+                            <input type="radio" id="radio-bhk-1" name="uiBHK" value="1" />
+                            <label for="radio-bhk-1">1</label>
+                            <input type="radio" id="radio-bhk-2" name="uiBHK" value="2" />
+                            <label for="radio-bhk-2">2</label>
+                            <input type="radio" id="radio-bhk-3" name="uiBHK" value="3" checked />
+                            <label for="radio-bhk-3">3</label>
+                            <input type="radio" id="radio-bhk-4" name="uiBHK" value="4" />
+                            <label for="radio-bhk-4">4</label>
+                            <input type="radio" id="radio-bhk-5" name="uiBHK" value="5" />
+                            <label for="radio-bhk-5">5</label>
+                        </div>
+                        <h2>Bath</h2>
+                        <div class="switch-field input-group outer-shadow">
+                            <input type="radio" id="radio-bath-1" name="uiBathrooms" value="1" />
+                            <label for="radio-bath-1">1</label>
+                            <input type="radio" id="radio-bath-2" name="uiBathrooms" value="2" />
+                            <label for="radio-bath-2">2</label>
+                            <input type="radio" id="radio-bath-3" name="uiBathrooms" value="3" checked />
+                            <label for="radio-bath-3">3</label>
+                            <input type="radio" id="radio-bath-4" name="uiBathrooms" value="4" />
+                            <label for="radio-bath-4">4</label>
+                            <input type="radio" id="radio-bath-5" name="uiBathrooms" value="5" />
+                            <label for="radio-bath-5">5</label>
+                        </div>
+                        <h2>Location</h2>
+                        <div>
+                            <select class="location outer-shadow" name="" id="uiLocations">
+                                <option value="" disabled="disabled" selected="selected">Choose a
+                                    Location</option>
+                                <option>Electronic City</option>
+                                <option>Rajaji Nagar</option>
+                            </select>
+                        </div>
+                        <div class="submit-btn">
+                            <button type="button" onclick="onClickedEstimatePrice()" class="btn-1 submit outer-shadow hover-in-shadow">
+                                Predict Price
+                            </button>
+                        </div>
+                        <div id="uiEstimatedPrice" class="result outer-shadow">
+                            <h2></h2>
+                        </div>
+                    </form>
+                </div>
+                <!-- bangalore prediction model end -->
+
+            </div>
+        </div>
+    </section>
+    <!-- predict section end -->
+
+    <!-- contact section start -->
+    <section class="contact-section section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title">
+                    <h2 data-heading="contact">Get In Touch</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!-- contact item start -->
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-phone"></i>
+                        <span>Phone</span>
+                        <a href="tel:+919004475837">
+                            <p>9004475837</p>
+                        </a>
+                    </div>
+                </div>
+                <!-- contact item end -->
+                <!-- contact item start -->
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                        <p>rahulbgupta24@gmail.com</p>
+                    </div>
+                </div>
+                <!-- contact item end -->
+                <!-- contact item start -->
+                <div class="contact-item">
+                    <div class="contact-item-inner outer-shadow">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Address</span>
+                        <p>Kandivali East, Mumbai- 400101</p>
+                    </div>
+                </div>
+                <!-- contact item end -->
+            </div>
+            <div class="row">
+                <div class="contact-form">
+                    <form target="_blank" action="https://formsubmit.co/0ba43f6d4037be0f4e33762b347eed69" method="POST">
+                        <div class="row">
+                            <div class="w-50">
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <input type="text" placeholder="Full Name" name="name" class="input-control" required>
+                                </div>
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <input type="email" placeholder="Email" name="email" class="input-control" required>
+                                </div>
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <input type="text" placeholder="Subject" name="subject" class="input-control" required>
+                                </div>
+                            </div>
+                            <div class="w-50">
+                                <div class="input-group outer-shadow hover-in-shadow">
+                                    <textarea class="input-control" name="message" placeholder="Message" required></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="submit-btn">
+                                <button type="submit" class="btn-1 outer-shadow hover-in-shadow">
+                                    Send Message
+                                </button>
+                                <span></span>
+                                <button type="reset" class="btn-1 outer-shadow hover-in-shadow">
+                                    Reset
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- style switcher start -->
+    <div class="style-switcher outer-shadow">
+        <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon outer-shadow hover-in-shadow">
+            <i class="fas"></i>
+        </div>
+
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- style switcher end -->
+
+    <!--  main js  -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/app.js') }}"></script>
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--  style switcher js  -->
+    <script type="text/javascript" src="{{ url_for('static', filename='js/style-switcher.js') }}"></script>
+</body>
+
+</html>
