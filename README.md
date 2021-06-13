@@ -5,7 +5,8 @@ I created this House Price Prediction website with the help of a Linear Regressi
 A user can write the "Area (in square feet)", select the number of "BHK" and "Bathroom", and at last, choose the preferred "Location" and click on the "Predict" button. After clicking, the aforementioned ML model will predict the price of the house as per the data submitted by the user.
 
 You can have look on my Website here : https://ml-housepriceprediction.herokuapp.com/
-but due to some reasons it can't run the ML model. I will update this repo if i get the solution.
+
+But due to some reasons it can't run the ML model. I will update this repo if i get the solution.
 
 ## Web App Preview
 
