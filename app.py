@@ -1,10 +1,9 @@
 from flask import Flask, request, jsonify
-from website import create_app
 import util
 import util_2
 import util_3
 
-app =  create_app()
+app =  Flask(__name__)
 
 
 # bangalore
