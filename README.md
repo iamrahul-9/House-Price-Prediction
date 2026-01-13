@@ -1,8 +1,3 @@
-Here is a **short, simple, and professional README**.
-This is concise, clear, and safe for interviews.
-
----
-
 # House Price Prediction using Machine Learning
 
 ## Overview
