@@ -65,7 +65,3 @@ Linear Regression is used to predict a continuous numerical value, which makes i
 ## Learning Outcome
 
 This project demonstrates a complete machine learning pipeline from training to real-time prediction.
-
----
-
-If you want it even shorter for a **resume project description**, tell me and I’ll compress it into 2–3 lines.
